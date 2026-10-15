@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #020617;
+    --bg-surface: #0f172a;
+    --bg-card: rgba(15, 23, 42, 0.75);
+    --border-color: rgba(30, 41, 59, 0.8);
+    --accent-blue: #3b82f6;
+  }
+
+  html.light-mode {
+    --bg-primary: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-card: rgba(255, 255, 255, 0.95);
+    --border-color: rgba(226, 232, 240, 0.9);
+    --accent-blue: #2563eb;
+    color-scheme: light;
+  }
+  
+  body {
+    background-color: #020617;
+    color: #f8fafc;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  html.light-mode body {
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+}
+
+/* Light mode overrides for high readability */
+html.light-mode .bg-slate-950 {
+  background-color: #ffffff !important;
+}
+html.light-mode .bg-slate-950\/95,
+html.light-mode .bg-slate-950\/80 {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+}
+html.light-mode .bg-slate-900 {
+  background-color: #f1f5f9 !important;
+}
+html.light-mode .bg-slate-900\/60,
+html.light-mode .bg-slate-900\/80,
+html.light-mode .bg-slate-900\/40 {
+  background-color: #f8fafc !important;
+}
+html.light-mode .border-slate-800,
+html.light-mode .border-slate-800\/80,
+html.light-mode .border-slate-800\/50,
+html.light-mode .border-slate-700 {
+  border-color: #e2e8f0 !important;
+}
+html.light-mode .text-white {
+  color: #0f172a !important;
+}
+html.light-mode .text-slate-100 {
+  color: #1e293b !important;
+}
+html.light-mode .text-slate-200 {
+  color: #334155 !important;
+}
+html.light-mode .text-slate-300 {
+  color: #475569 !important;
+}
+html.light-mode .text-slate-400 {
+  color: #64748b !important;
+}
+html.light-mode .text-slate-500 {
+  color: #94a3b8 !important;
+}
+html.light-mode .hover\:bg-slate-900:hover {
+  background-color: #e2e8f0 !important;
+}
+html.light-mode .hover\:bg-slate-800:hover {
+  background-color: #cbd5e1 !important;
+}
+html.light-mode .glass-panel {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+}
+html.light-mode .glass-card {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-color: rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.04) !important;
+}
+html.light-mode .glass-card:hover {
+  border-color: rgba(59, 130, 246, 0.6) !important;
+  box-shadow: 0 8px 25px -4px rgba(59, 130, 246, 0.12) !important;
+}
+html.light-mode ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+html.light-mode ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-card:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 20px -2px rgba(59, 130, 246, 0.1);
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.3);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.3);
+}
+
+/* Pulse animation for voice recognition */
+@keyframes voice-wave {
+  0%, 100% {
+    height: 8px;
+  }
+  50% {
+    height: 28px;
+  }
+}
+
+.animate-voice-1 {
+  animation: voice-wave 0.8s ease-in-out infinite;
+}
+.animate-voice-2 {
+  animation: voice-wave 0.8s ease-in-out 0.2s infinite;
+}
+.animate-voice-3 {
+  animation: voice-wave 0.8s ease-in-out 0.4s infinite;
+}
+.animate-voice-4 {
+  animation: voice-wave 0.8s ease-in-out 0.1s infinite;
+}
+.animate-voice-5 {
+  animation: voice-wave 0.8s ease-in-out 0.3s infinite;
+}

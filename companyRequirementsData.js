@@ -1,0 +1,56 @@
+export const COMPANY_REQUIREMENTS = [
+  {
+    company: 'Google',
+    logo: 'https://www.google.com/favicon.ico',
+    tier: 'Product Super-Tier',
+    minReadinessScore: 88,
+    requiredSkills: ['Data Structures', 'Algorithms', 'System Design', 'Python', 'C++'],
+    hiringProcess: ['Resume Screening', 'Online Coding OA (2 Qs)', 'Tech Phone Screen', '4x Onsite Coding & System Design'],
+    topicWeightage: [
+      { topic: 'Trees & Graphs', weight: '35%' },
+      { topic: 'Dynamic Programming', weight: '25%' },
+      { topic: 'System Design', weight: '20%' },
+      { topic: 'Arrays & Strings', weight: '20%' },
+    ],
+  },
+  {
+    company: 'Amazon',
+    logo: 'https://www.amazon.com/favicon.ico',
+    tier: 'Product Super-Tier',
+    minReadinessScore: 85,
+    requiredSkills: ['Data Structures', 'System Design', 'Leadership Principles', 'Java', 'Object Oriented Design'],
+    hiringProcess: ['ATS Resume Parser', 'OA1 Debugging & Reasoning', 'OA2 Coding (2 Qs)', 'Full Onsite Loop + Bar Raiser'],
+    topicWeightage: [
+      { topic: 'Leadership Principles (STAR)', weight: '30%' },
+      { topic: 'Trees & Hash Maps', weight: '30%' },
+      { topic: 'OO Design', weight: '20%' },
+      { topic: 'Sliding Window / Two Pointers', weight: '20%' },
+    ],
+  },
+  {
+    company: 'TCS (Digital / Prime)',
+    logo: 'https://www.tcs.com/favicon.ico',
+    tier: 'Mass Placement & High Package',
+    minReadinessScore: 72,
+    requiredSkills: ['Quantitative Aptitude', 'Logical Reasoning', 'C / C++', 'Java', 'SQL'],
+    hiringProcess: ['NQT Aptitude & Reasoning', 'Advanced Coding Section', 'Technical & HR Interview'],
+    topicWeightage: [
+      { topic: 'Quantitative Aptitude', weight: '40%' },
+      { topic: 'Logical & Verbal', weight: '30%' },
+      { topic: 'Hands-on Coding', weight: '30%' },
+    ],
+  },
+  {
+    company: 'Infosys (Power Programmer)',
+    logo: 'https://www.infosys.com/favicon.ico',
+    tier: 'Mass Placement & Specialist SDE',
+    minReadinessScore: 75,
+    requiredSkills: ['Aptitude', 'Data Structures', 'SQL & DBMS', 'Java / Python'],
+    hiringProcess: ['HackWithInfy / Infytq Test', 'Technical Coding Interview', 'Behavioral HR'],
+    topicWeightage: [
+      { topic: 'Data Structures & Algorithms', weight: '45%' },
+      { topic: 'Aptitude & Reasoning', weight: '35%' },
+      { topic: 'SQL & Database Design', weight: '20%' },
+    ],
+  },
+];
